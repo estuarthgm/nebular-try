@@ -1,0 +1,141 @@
+<!--cards -->
+    <nb-card  accent="info">
+        <nb-card-header>My New Card</nb-card-header>
+        <nb-card-body>
+            A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+            Originally, nebula was a name for any diffuse astronomical object,
+            including galaxies beyond the Milky Way.
+        </nb-card-body>
+        <nb-card-footer>By Wikipedia</nb-card-footer>
+    </nb-card>
+
+    <nb-card size="tiny" accent="danger">
+        <nb-card-header>Tiny card</nb-card-header>
+    </nb-card>
+
+    <nb-flip-card>
+        <nb-card-front>
+            <nb-card accent="success">
+                <nb-card-header >Xiaomi</nb-card-header>
+                <nb-card-body>
+                    Xiaomi Inc. is a Chinese company dedicated to the design, development and sale of smartphones ,
+                    apps and other electronic products, which it sells in its Mi stores in China and certain countries in Asia, Europe and Latin America, as well as on its website. Since the launch of its first smartphone in August 2011, 
+                    Xiaomi has gained market share in China and has expanded its product line to other electronic devices. 
+                </nb-card-body>
+                <nb-card-footer>By Wikipedia</nb-card-footer>
+            </nb-card>
+        </nb-card-front>
+        <nb-card-back>
+            <nb-card accent="success">
+                <nb-card-header>Xiaomi</nb-card-header>
+                <nb-card-body>
+                    In 2013 , the company managed to turn the Xiaomi Mi 2S, 
+                    the most popular mobile China , ahead of the Galaxy S4 for Samsung and the iPhone 5 of Apple ,
+                     according to data from consulting firm specialized AnTuTu . 
+                </nb-card-body>
+                <nb-card-footer>By Wikipedia</nb-card-footer>
+            </nb-card>
+        </nb-card-back>
+    </nb-flip-card>
+
+    <nb-reveal-card>
+        <nb-card-front>
+            <nb-card status="success">
+                <nb-card-header>Xiaomi</nb-card-header>
+                <nb-card-body>
+                    Xiaomi Inc. is a Chinese company dedicated to the design, development and sale of smartphones ,
+                    apps and other electronic products, which it sells in its Mi stores in China and certain countries in Asia, Europe and Latin America, as well as on its website. Since the launch of its first smartphone in August 2011, 
+                    Xiaomi has gained market share in China and has expanded its product line to other electronic devices. 
+                </nb-card-body>
+                <nb-card-footer>By Wikipedia</nb-card-footer>
+            </nb-card>
+        </nb-card-front>
+        <nb-card-back>
+            <nb-card status="danger">
+                <nb-card-header>Xiaomi</nb-card-header>
+                <nb-card-body>
+                    In mid-2013, Xiaomi Inc. signed the Brazilian Hugo Barra , 6 vice president of the American company Google ,
+                     in charge until his departure, of the Android operating system, with the intention of giving the Chinese company a more international dimension. 
+                     In October 2013, Xiaomi put its Mi3 model up for sale, and its first 100,000 units took 86 seconds to sell online, the company revealed. 
+                </nb-card-body>
+                <nb-card-footer>By Wikipedia</nb-card-footer>
+            </nb-card>
+        </nb-card-back>
+    </nb-reveal-card>
+<!--stepper -->
+    <nb-card status="danger">
+        <nb-card-header>Xiaomi Information</nb-card-header>
+        <nb-card-body>
+             <nb-stepper>
+                <nb-step [label]="labelOne">
+                    <ng-template #labelOne>First Step</ng-template>
+                    <h4>Xiaomi</h4>
+                    <p>
+                        Xiaomi Inc. is a Chinese company dedicated to the design, development and sale of smartphones ,
+                        apps and other electronic products, which it sells in its Mi stores in China and certain countries in Asia, Europe and Latin America, as well as on its website. Since the launch of its first smartphone in August 2011, 
+                        Xiaomi has gained market share in China and has expanded its product line to other electronic devices.   
+                    </p>
+                 </nb-step>
+                 <nb-step [label]="labelTwo">
+                    <ng-template #labelTwo> Second Step</ng-template>
+                    <h4>More Information</h4>
+                    <p>
+                        In mid-2013, Xiaomi Inc. signed the Brazilian Hugo Barra , 6 vice president of the American company Google ,
+                     in charge until his departure, of the Android operating system, with the intention of giving the Chinese company a more international dimension. 
+                     In October 2013, Xiaomi put its Mi3 model up for sale, and its first 100,000 units took 86 seconds to sell online, the company revealed. 
+                    </p>
+                 </nb-step>
+             </nb-stepper>
+        </nb-card-body>
+    </nb-card>
+<!--accordion -->
+        <nb-accordion>
+            <nb-accordion-item > 
+                <nb-accordion-item-header>
+                    Xiaomi Information
+                </nb-accordion-item-header>
+                <nb-accordion-item-body>
+                    Xiaomi Inc. is a Chinese company dedicated to the design, development and sale of smartphones ,
+                            apps and other electronic products, which it sells in its Mi stores in China and certain countries in Asia, Europe and Latin America, as well as on its website. Since the launch of its first smartphone in August 2011, 
+                            Xiaomi has gained market share in China and has expanded its product line to other electronic devices.   
+                </nb-accordion-item-body>
+            </nb-accordion-item>
+            <nb-accordion-item>
+                <nb-accordion-item-header>
+                    More Information
+                </nb-accordion-item-header>
+                <nb-accordion-item-body>
+                    In mid-2013, Xiaomi Inc. signed the Brazilian Hugo Barra , 6 vice president of the American company Google ,
+                         in charge until his departure, of the Android operating system, with the intention of giving the Chinese company a more international dimension. 
+                         In October 2013, Xiaomi put its Mi3 model up for sale, and its first 100,000 units took 86 seconds to sell online, the company revealed. 
+                </nb-accordion-item-body>
+            </nb-accordion-item>
+        </nb-accordion>
+        <tr></tr>
+<!--list-->
+        <nb-card size="medium" class="nb-s">
+            <nb-card-header>Some things</nb-card-header>
+            <nb-list>
+                <nb-list-item *ngFor="let thing of things">
+                    {{thing}}
+                </nb-list-item>
+            </nb-list>
+        </nb-card>
+<!--tabs-->     
+        <nb-card>
+            <nb-card-body>
+                <nb-tabset>
+                    <nb-tab tabTitle="First Tab">
+                         Tab 1 content
+                    </nb-tab>
+                    <nb-tab tabTitle="Second Tab">
+                         Tab 2 content
+                    </nb-tab>
+                </nb-tabset>
+            </nb-card-body>
+        </nb-card>
+
+
+
+
+
